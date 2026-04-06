@@ -1,6 +1,9 @@
 export const getUsers = async () => {
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+    console.log("API_URL:", API_URL);
+    
   try {
-    const response = await fetch("http://localhost:5000/api/profile");
+    const response = await fetch(`${API_URL}/api/profile`);
     const data = await response.json();
     console.log("data",data);
     
