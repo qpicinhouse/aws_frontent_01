@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>User Cards (API)</h1>
+      <h1>User Details </h1>
 
       <div className="card-container">
         {users.map((user, index) => (
